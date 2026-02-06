@@ -1,0 +1,12 @@
+.container {
+    background: rgb(248, 245, 241);
+    color: rgb(37, 23, 6);
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+    height: 400px;
+}
+
+.categories {
+    padding: 4% 0%;
+}
