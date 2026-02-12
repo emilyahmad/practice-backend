@@ -1,17 +1,13 @@
+<?php include('admin/partials-front/menu.php'); ?>
+<!-- categories section -->
+<section class="categories">
+    <div class="container">
+        <h2 class="text-center">Explore Foods</h2>
 <?php
-
-$title = "Hamburger Joe's";
-include('admin/partials-front/menu.php');
-include('config/constants.php');
-
-?>
-
-<link rel="stylesheet" href="styleindex.css">
-
 <!-- categories section -->
  <section class="categories">
     <div class="container">
-        <h2 class="text-center">Explore Hamburger Joe's Food</h2>
+        <h2 class="text-center">Explore Hamburger Joes Food</h2>
         <?php// create sql query to display categories from database
         $sql = "SLECT * FROM tbl_category WHERE active="yes" AND feature="yes" LIMIT 3";
         $res = mysqli_query($conn, $sql);
@@ -48,7 +44,10 @@ include('config/constants.php');
             echo "<div class='error'>Category Not Added.</div>">
         } 
         ?>
-    </div>
+    <div class="clearfix"></div>
+</div>
 </section>
 
-<?php include ('admin/partials-front/footer.php')
+<!-- end section -->
+
+<?php include ('admin/partials-front/footer.php');
