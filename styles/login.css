@@ -1,0 +1,249 @@
+ <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            transition: all 0.5s linear;
+            color: #fff;
+            text-transform: capitalize;
+        }
+
+
+        body {
+            background-color: #1A1110;
+            font-family: "Lato", sans-serif;
+        }
+
+
+        .login_container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+
+        .login_box {
+            background-color: #312c2a;
+            padding: 4rem;
+            border-radius: 10px;
+            box-shadow: rgba(0,0,0,1.35) 0 5px 15px;
+            width: 100%;
+            max-width: 450px;
+            border: 2px solid transparent;
+        }
+
+
+        .login_box:hover {
+            border: 2px solid orangered;
+        }
+
+
+        .login_header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+
+        .login_header h1 {
+            font-size: 2.5em;
+            font-family: "Playwrite CU", cursive;
+            color: #fff;
+            margin-bottom: 0.5rem;
+            text-transform: capitalize;
+        }
+
+
+        .login_header p {
+            color: #888;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            text-transform: capitalize;
+        }
+
+
+        .form_group {
+            margin-bottom: 2rem;
+        }
+
+
+        .form_group label {
+            display: block;
+            margin-bottom: 0.8rem;
+            color: #fff;
+            font-weight: 600;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            text-transform: capitalize;
+        }
+
+
+        .form_group input {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #555;
+            background-color: #1A1110;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: all 0.5s linear;
+            font-family: "Lato", sans-serif;
+        }
+
+
+        .form_group input:focus {
+            outline: none;
+            border-color: orangered;
+            box-shadow: 0 0 10px rgba(255, 69, 0, 0.3);
+        }
+
+
+        .form_group input::placeholder {
+            color: #666;
+        }
+
+
+        .remember_me {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            gap: 0.8rem;
+        }
+
+
+        .remember_me input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+            accent-color: orangered;
+        }
+
+
+        .remember_me label {
+            margin: 0;
+            color: #888;
+            font-weight: 400;
+            cursor: pointer;
+            text-transform: capitalize;
+        }
+
+
+        .error_box {
+            background-color: #3a2a2a;
+            border: 2px solid #d32f2f;
+            color: #ff6b6b;
+            padding: 1.5rem;
+            border-radius: 5px;
+            margin-bottom: 2rem;
+        }
+
+
+        .error_box ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .error_box li {
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+            text-transform: capitalize;
+        }
+
+
+        .error_box li:last-child {
+            margin-bottom: 0;
+        }
+
+
+        .success_box {
+            background-color: #2a3a2a;
+            border: 2px solid #51cf66;
+            color: #51cf66;
+            padding: 1.5rem;
+            border-radius: 5px;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+
+
+        .login_btn {
+            width: 100%;
+            padding: 1rem;
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+            cursor: pointer;
+            background-color: orangered;
+            border: 2px solid orangered;
+            color: #fff;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: all 0.5s ease-out;
+            font-family: "Lato", sans-serif;
+            text-transform: capitalize;
+        }
+
+
+        .login_btn:hover {
+            background-color: transparent;
+            color: orangered;
+        }
+
+
+        .login_footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #555;
+        }
+
+
+        .login_footer p {
+            color: #888;
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+            text-transform: capitalize;
+        }
+
+
+        .login_footer a {
+            color: orangered;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.5s linear;
+            text-transform: capitalize;
+        }
+
+
+        .login_footer a:hover {
+            color: #fff;
+        }
+
+
+        @media only screen and (max-width: 600px) {
+            .login_box {
+                padding: 2rem;
+            }
+
+
+            .login_header h1 {
+                font-size: 2em;
+            }
+
+
+            .form_group input {
+                padding: 0.8rem;
+            }
+
+
+            .login_btn {
+                padding: 0.8rem;
+                font-size: 1rem;
+            }
+        }
+    </style>
