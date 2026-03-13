@@ -1,0 +1,343 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: all 0.5s linear;
+    color: white;
+    text-transform: capitalize;
+}
+
+body {
+    background-color: #1A1110;
+    font-family: "Lato", "san-serif";
+}
+
+.navbar {
+    width: 100%;
+    padding: 2rem 3rem;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(0,0,0, .35) 0 5px 15px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar_left {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex: 1;
+}
+
+.logo {
+    font-size: 2em;
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.navbar_right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.user_info {
+    text-align: right;
+}
+
+.user_info {
+    text-align: right;
+}
+
+.user_info p {
+    font-size: .9rem;
+    color: #888;
+    margin-bottom: .3rem;
+}
+
+.user_info strong {
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.logout_btn {
+    padding: 9px 15px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    background-color: orangered;
+    transition: all .5s ease-out;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.dashboard {
+    margin-top: 120px;
+    padding: 3rem;
+    width: 100%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.welcome_section {
+    background-color: #312c2a;
+    padding: 3rem;
+    box-shadow: rgba(0,0,0,1.35) 0 5px 15px;
+    border: 2px solid transparent;
+    margin-bottom: 3rem;
+}
+
+.welcome_section:hover {
+    border: 2px solid orangered;
+}
+
+.welcome_section p {
+    font-size: 1.1rem;
+    color: #888;
+    line-height: 1.6;
+}
+
+.info_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.info_card {
+    background-color: #312c2a;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,1.35) 0 5px 15px;
+    border: 2px solid transparent;
+    text-align: center;
+    transition: all 0.5s linear;
+
+}
+
+.info_card:hover {
+    border: 2px solid orangered;
+    cursor: pointer;
+}
+
+.info_card h3 {
+    color: orangered;
+    margin-bottom: 1rem;
+    font-size: .9rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.info_card p {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    word-break: break-all; /* breaks hyphenated words */
+    margin-bottom: 1rem;
+}
+
+.info_card .icon {
+    font-size: 2.5rem;
+    color: orangered;
+    margin-bottom: 1rem;
+}
+
+.admin_badge {
+    display: inline-block;
+    background-color: orangered;
+    color: #1A1110;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    font-size: .85rem;
+    font-weight: 600;
+}
+
+.admin_badge.user {
+    background-color: #888;
+}
+
+.stats_section {
+    background-color: #312c2a;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,1.35) 0 5px 15px;
+    border: 2px solid transparent;
+    margin-bottom: 3rem;
+}
+
+.stats_section:hover {
+    border: 2px solid orangered;
+}
+
+.stats_section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.stat_item {
+    text-align: center;
+    padding: 2rem;
+    background-color: #1A1110;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: all .5 linear;
+}
+
+.stats_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.stats-grid:hover {
+    border: 2px solid orangered;
+}
+
+.stat_item, .stat_icon {
+    font-size: 3em;
+    color: orangered;
+    margin-bottom: 1rem;
+}
+
+.stat_item, .stat_number {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.stat_item, .stat_label {
+    font-size: 1rem;
+    color: #888;
+}
+
+.actions_section {
+    background-color: #312c2a;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,1.35) 0 5px 15px;
+    border: 2px solid transparent;
+}
+
+.actions_section:hover {
+    border: 2px solid orangered;
+}
+
+.actions_section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.actions_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.action_btn {
+    padding: 2rem;
+    background-color: #1A1110;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    transition: all .5s linear;
+    cursor: pointer;
+    display: flex;flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.action_btn:hover {
+    border: 2px solid orangered;
+    background-color: rgba(255, 69, 0, 0.1);
+}
+
+.action_btn .action_icon {
+    font-size: 2.5em;
+    color: orangered;
+}
+
+.action_btn .action_text {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+@media only screen and (max-width: 1050px) {
+    .info_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stats_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .actions_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dashboard_container {
+        padding: 2rem;
+    }
+    
+    .nav_bar {
+        padding: 1.5 rem 2rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .info_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stats_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .actions_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dashboard_container {
+        padding: 2rem;
+    }
+
+    .nav_bar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .navbar_left, .navbar_right {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .info_grid, .stats_grid,
+    .actions_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome_section h1 {
+        font-size: 1.8em;
+    }
+
+    .dashboard_container {
+        margin-top: 200px;
+        padding: 1rem;
+    }
+
+    .info_card, .stats_section,
+    .stats_section, .welcome_section {
+        padding: 1.5rem;
+    }
+}
