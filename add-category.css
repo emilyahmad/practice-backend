@@ -1,0 +1,96 @@
+   /* Override specific styles for category form */
+        .main-content {
+            background-color: #1A1110;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .wrapper {
+            max-width: 550px;
+        }
+        .tbl-30 input[type="text"], .tbl-30 input[type="file"] {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #555;
+            background-color: #1A1110;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: all 0.5s linear;
+            font-family: "Lato", sans-serif;
+            box-sizing: border-box;
+        }
+
+        .tbl-30 input[type="text"]:focus,
+        .tbl-30 input[type="file"]:focus {
+            outline: none;
+            border-color: orangered;
+            box-shadow: 0 0 10px rgba(255, 69, 0, 0.3);
+        }
+
+        .tbl-30 input[type="text"]::placeholder {
+            color: #666;
+        }
+
+        .tbl-30 input[type="radio"] {
+            margin-right: 0.5rem;
+            cursor: pointer;
+            accent-color: orangered;
+        }
+
+        .tbl-30 input[type="radio"] + label {
+            display: inline;
+            margin-right: 1.5rem;
+            margin-bottom: 0;
+        }
+
+        .tbl-30 input[type="submit"].btn-secondary {
+            width: 100%;
+            padding: 1rem;
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+            cursor: pointer;
+            background-color: orangered;
+            border: 2px solid orangered;
+            color: #fff;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: all 0.5s ease-out;
+            font-family: "Lato", sans-serif;
+            text-transform: capitalize;
+        }
+
+        .tbl-30 input[type="submit"].btn-secondary:hover {
+            background-color: transparent;
+            color: orangered;
+        }
+
+        .success {
+            background-color: #2a3a2a;
+            border: 2px solid #51cf66;
+            color: #51cf66;
+            padding: 2rem;
+            border-radius: 5px;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+
+        .error {
+            background-color: #3a2a2a;
+            border: 2px solid #d32f2f;
+            color: #ff6b6b;
+            padding: 1.5rem;
+            border-radius: 5px;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+
+        .file-info {
+            font-size: 0.9rem;
+            color: #ccc;
+            margin-top: 0.5rem;
+        }
